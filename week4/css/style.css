@@ -44,6 +44,24 @@ nav .wrap-nav{position:absolute; top:50px; right:0px; height: 37px; background:#
 .minimenu{position: relative;margin: 0px;background:#333333;}
 .minimenu div{overflow: hidden;position: relative;font: 18px/37px 'PT Sans Narrow';color: #fff;text-align:center;text-transform:uppercase;font-weight:bold;}
 .minimenu select{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; opacity: 0;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);	cursor: pointer;}
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+#gallery-title {
+margin-left:37%;
+margin-top:4%;
+margin-bottom:4%;
+}
+
+
+#logo{ 
+   max-width:100%;
+   min-width:200px;
+   margin-top: -88px;
+    }
+
+
+
+
 
 /* -------------------------------------------- */
 /* ------------------Featured---------------- */
@@ -61,10 +79,71 @@ nav .wrap-nav{position:absolute; top:50px; right:0px; height: 37px; background:#
 .block01 img{border:5px solid #CCCCCC;}
 .block01 h2{font-size:20px; line-height:30px;}
 
-.block02 {margin:10px; border-bottom:1px dashed #cccccc; border-top:1px dashed #cccccc;}
-.block02 p { padding:30px; font-size:24px; text-align:center; line-height:30px;}
-.block02 a {color:#DA251D;}
 
+
+
+/*-----------------------------Call to Action--------------------------------------*/
+.sub-box {
+  border-style: solid;
+  border-color: #CF000F;
+  border-width: 2px;
+  margin: 50px auto;
+  width: 380px;
+  height: 122px;
+  margin-left: 290px;
+}
+input[type="email"] {
+  appearance: none;
+  width:380px;
+  height:70px;
+  font-size:3em;
+  background:rgba(20, 124, 193, 0.8);
+  border:none;
+  border-bottom:solid 4px #D91E18;
+  text-align:center;
+  transition: border-color 0.6s ease;
+}
+
+::-webkit-input-placeholder {
+   color: #446CB3;
+   transition: color 0.3s ease;
+}
+
+:focus::-webkit-input-placeholder {
+   color: transparent;
+   transition: color 0.3s ease;
+}
+
+
+input[type="email"]:focus {
+   outline:none;
+   border:none;
+  border-bottom:solid 4px #00AEEF;
+  transition: border-color 1s ease;
+}
+
+input[type="submit"] {
+  appearance: none;
+  width:380px;
+  height:50px;
+  font-size:1.05em;
+  background:transparent;
+  color: #0059DE;
+  border:none;
+  text-align:center;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  transition: color 0.5s ease;
+  outline:none;
+   border:none;
+}
+
+input[type="submit"]:hover {
+  color: #464c4c;
+  cursor:pointer;
+  transition: color 0.5s ease;
+}
+/*------------------------------------------------------------------------------*/
 .block03 {margin:30px 0;}
 .block03 h2{font-size:18px;}
 .block03 img{float:left; margin-right:10px;}
@@ -145,8 +224,8 @@ h1 {
   float: right;
   vertical-align: top;
   background: #BFE4FF;
-  padding: 1.5em;
-  margin-top: -34em;
+  padding: 3.5em;
+  margin-top: -65em;
   border-radius: 12px;
   border: 6px solid #26658C;
   margin-right: 309px;
@@ -728,8 +807,74 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
    }
 }
 
+/*-----------------------------Download---------------*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
- 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+div {
+  margin-bottom: 60px;
+}
+.btn {
+    padding: 12px 20px;
+  border-radius: 2px;
+  font-size: 22px;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 100ms ease;
+  margin-left: 615px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(67, 137, 239);
+  padding-left: 66px;
+  &.btn-1 {
+    border: 2px solid darken(Aquamarine,10%);
+    background: Aquamarine;
+     &:hover {
+      background: darken(Aquamarine,10%);
+     }
+  }
+  &.btn-2 {
+    color: SkyBlue;
+    border: 2px solid;
+    &:hover {
+      color: #444;
+    }
+  }
+  &:hover {
+    .entypo-down {
+       bottom: -4px;
+    }
+  }
+}
+
+.download-box {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  margin-left: 10px;
+  .box {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 30px;
+    height: 10px;
+    border: 3px solid; 
+    border-top: none;
+  }
+  .entypo-down {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    transition: all 200ms 0 ease;
+  }
+}
 
 /* -------------------------------------------- */
 /* ------------------Footer-------------------- */
@@ -742,7 +887,7 @@ footer .content{padding:5px}
 footer .content a{color:#DA251D; text-decoration:none;}
 footer .content .gallery img{ float:left; padding:5px; border:1px solid #CCC; margin:5px;}
 
-.copyright{text-align:center; margin-top: 175px;}
-.copyright a{color:#ffffff; text-decoration:underline;}
+.bottom{text-align:center; margin-top: 175px;margin-right: 337px;}
+.bottom a{color:#ffffff; text-decoration:underline;}
 
 
